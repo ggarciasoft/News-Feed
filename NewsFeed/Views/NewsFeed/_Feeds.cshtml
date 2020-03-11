@@ -1,0 +1,68 @@
+﻿<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Your Feeds
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div id="divYourFeeds" class="panel-body">
+                <ul>
+                    <li>
+                        First
+                        <ul>
+                            <li>Nested</li>
+                        </ul>
+                    </li>
+                    <li>Second</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    News Feed
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                <div id="divNewsFeeds"></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Add News Feed
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+                <form>
+                    <div id="groupCategory" class="form-group">
+                        <label for="txtCategory">Category</label>
+                        <input type="text" class="form-control" id="txtCategory" placeholder="The New York Times">
+                    </div>
+                    <div id="groupNewsFeedName" class="form-group">
+                        <label for="txtNewsFeedName">News Feed Name</label>
+                        <input type="text" class="form-control" id="txtNewsFeedName" placeholder="Sports">
+                    </div>
+                    <div id="groupNewsFeedUrl" class="form-group">
+                        <label for="txtNewsFeedUrl">News Feed URL</label>
+                        <input type="text" class="form-control" id="txtNewsFeedUrl" placeholder="http://example.com">
+                    </div>
+                    <button id="btnAddFeed" type="button" class="btn btn-default">Add</button>
+                </form>
+                <div id="divNewsFeeds"></div>
+            </div>
+        </div>
+    </div>
+</div>
+

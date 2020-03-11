@@ -1,0 +1,27 @@
+﻿@using NewsFeed.Data.Models
+@{
+    ViewBag.Title = "Index";
+}
+<hr />
+<div id="divSearch">
+    <form class="form-inline">
+        <div class="form-group">
+            <select id="drpOrder" class="form-control">
+                <option value="Date">Date</option>
+                <option value="Title">Title</option>
+                <option value="Creator">Creator</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="txtSearch" placeholder="Press enter key to search">
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        @Html.Partial("_Feeds")
+    </div>
+    <div id="divNews" class="col-md-9">
+
+    </div>
+</div>
